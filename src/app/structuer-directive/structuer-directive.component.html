@@ -1,0 +1,16 @@
+<p>structuer-directive works!</p>
+
+
+<!-- <h1 *ngIf="false">Hellow word</h1> لن تظهر على المتصفح -->
+<!-- <h1 *ngIf="isActive">Hellow word</h1> -->
+
+
+
+<h2 *ngIf="isLogin;then thenBlock else elseBlock">wellcome Gust</h2>
+<ng-template #elseBlock>
+  <h2>Hellow Mai</h2>
+
+</ng-template>
+<ng-template #thenBlock>
+  <h2 >Hellow {{userName}}</h2>
+</ng-template>

@@ -1,0 +1,20 @@
+<p>ngforh-directive works!</p>
+
+
+<div *ngFor="let car of cars">
+{{car}}
+</div>
+
+<!--
+<div *ngFor="let car of cars;index as i">
+ {{i}} {{car}}
+  </div>
+
+  <div *ngFor="let car of cars;index as i;odd as o">
+   {{o}} {{i}} {{car}}
+     </div> -->
+
+
+  <div *ngFor="let car of cars;index as i;odd as o;first as f;even as e">
+   {{e}} {{f}} {{o}} {{i}} {{car}}
+     </div>
